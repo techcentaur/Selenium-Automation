@@ -3,26 +3,26 @@ Web Automation through Selenium in python with the help of geckodriver in Firefo
 
 This Repo works on automating tasks using selenium:
 
-### `githubThrough.py`
+#### `githubThrough.py`
 
 It provides 2 methods to work on 
 
 1. **incognito(username,password)** - It opens the github.com in incognito mode in firefox, and login in the website using the login credentials passed as an argument by user.
 like this - 
 
-:::python
-firefox_profile = selenium.webdriver.FirefoxProfile()
-firefox_profile.set_preference("browser.privatebrowsing.autostart", True)
-driver = selenium.webdriver.Firefox(firefox_profile=firefox_profile)
-
+```
+> firefox_profile = selenium.webdriver.FirefoxProfile()
+> firefox_profile.set_preference("browser.privatebrowsing.autostart", True)
+> driver = selenium.webdriver.Firefox(firefox_profile=firefox_profile)
+```
 
 2.**normal_mode()** - It opens the github.com using the login credentials already saved in the browser
 
-### `googleSearch.py`
+#### `googleSearch.py`
 
 This python file provides a method **searchInBrowser()**, it takes input a string and then search it in google and the firefox window remains opened.
 
-### `youtubeSongPD.py`
+#### `youtubeSongPD.py`
 
 It provides 2 method-API to work on - 
 
