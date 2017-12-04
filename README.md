@@ -10,11 +10,11 @@ It provides 2 methods to work on
 1. **incognito(username,password)** - It opens the github.com in incognito mode in firefox, and login in the website using the login credentials passed as an argument by user.
 like this - 
 
-```
- 	firefox_profile = selenium.webdriver.FirefoxProfile()
-    firefox_profile.set_preference("browser.privatebrowsing.autostart", True)
-    driver = selenium.webdriver.Firefox(firefox_profile=firefox_profile)
-```
+:::python
+firefox_profile = selenium.webdriver.FirefoxProfile()
+firefox_profile.set_preference("browser.privatebrowsing.autostart", True)
+driver = selenium.webdriver.Firefox(firefox_profile=firefox_profile)
+
 
 2.**normal_mode()** - It opens the github.com using the login credentials already saved in the browser
 
@@ -32,7 +32,7 @@ It provides 2 method-API to work on -
 
 Both methods leave the firefox window open and the song keep on playing.
 
-> ``` youtubeSongPD file uses 'https://www.ssyoutube.com' + vid['href'] to download the file ```
+it uses link as _'https://www.ssyoutube.com' + vid['href']_ to download the file
 
 
 >Selenium Automation of Opening browsers and entering credentials.
